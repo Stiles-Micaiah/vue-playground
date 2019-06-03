@@ -9,19 +9,16 @@
                         object to put the value into our html.</p>
                     <p>Then use the index to print the players place in the collection.</p>
                     <!-- add the v-for to player-card -->
-                    <div class="player-card text-center">
-                        <h5> {{
-                            <!--code here--> }}</h5>
+                    <div v-for="player in players" class="player-card text-center">
+                        <h5> {{player.name}}</h5>
                         <div>
-                            <img class="img" src="" />
+                            <img class="img" src="player.photo" />
                         </div>
                         <div>
-                            <span>{{
-                                <!--code here-->}}</span>
+                            <span>{{player.position}}</span>
                         </div>
                         <div>
-                            <span>{{
-                                <!--code here--> }}</span>
+                            <span>{{player.number}}</span>
                         </div>
                         <div>
                             <span>{{
